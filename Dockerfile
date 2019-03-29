@@ -1,2 +1,2 @@
 FROM odoo:12
-RUN mkdir /mnt/odoo-addons/test
+RUN mkdir /mnt/extra-addons/test
