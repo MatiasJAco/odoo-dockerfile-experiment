@@ -1,2 +1,3 @@
 FROM odoo:12
-RUN mkdir /mnt/extra-addons/test
+RUN mkdir /tmp/test
+RUN echo "hola mundo" > /tmp/test/hola_mundo.txt
