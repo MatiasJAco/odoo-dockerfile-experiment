@@ -1,4 +1,5 @@
 FROM odoo:12
+USER root
 RUN mkdir /tmp/test
 RUN mkdir /home/odoo
 RUN mkdir /home/odoo/custom-addons
