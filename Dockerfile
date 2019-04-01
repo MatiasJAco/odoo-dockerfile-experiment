@@ -9,8 +9,8 @@ RUN mkdir /home/odoo
 RUN mkdir /home/odoo/custom-addons
 RUN chmod -R 775 /home/odoo
 RUN chown -R odoo:odoo /home/odoo
-RUN cd /home/odoo && curl -LOk  https://github.com/MatiasJAco/odoo-dockerfile-experiment/archive/master.zip
-RUN unzip /home/odoo/custom-addons/master.zip -d /custom-addons
+RUN cd /home/odoo/custom-addons && curl -LOk  https://github.com/MatiasJAco/odoo-dockerfile-experiment/archive/master.zip
+RUN unzip /home/odoo/custom-addons/master.zip -d  /home/odoo/custom-addons
 RUN rm /home/odoo/custom-addons/master.zip
 RUN echo "hola mundo" > /tmp/test/hola_mundo.txt
 RUN echo "hola mundo" > /mnt/extra-addons/hola_mundo_addons.txt
