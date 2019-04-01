@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="myconferences.list">
+      <field name="name">myconferences list</field>
+      <field name="model">myconferences.myconferences</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="myconferences.action_window">
+      <field name="name">myconferences window</field>
+      <field name="res_model">myconferences.myconferences</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="myconferences.action_server">
+      <field name="name">myconferences server</field>
+      <field name="model_id" ref="model_myconferences_myconferences"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="myconferences" id="myconferences.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="myconferences.menu_1" parent="myconferences.menu_root"/>
+    <menuitem name="Menu 2" id="myconferences.menu_2" parent="myconferences.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="myconferences.menu_1_list" parent="myconferences.menu_1"
+              action="myconferences.action_window"/>
+    <menuitem name="Server to list" id="myconferences" parent="myconferences.menu_2"
+              action="myconferences.action_server"/>
+    -->
+  </data>
+</odoo>
