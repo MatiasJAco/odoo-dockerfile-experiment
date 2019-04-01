@@ -1,5 +1,9 @@
 FROM odoo:12
 USER root
+RUN set -x; \
+        apt-get update \
+        && apt-get install -y --no-install-recommends \
+        && apt-get install -y zip
 RUN mkdir /tmp/test
 RUN mkdir /home/odoo
 RUN mkdir /home/odoo/custom-addons
