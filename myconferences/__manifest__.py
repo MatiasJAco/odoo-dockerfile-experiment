@@ -19,7 +19,6 @@
     'category': 'Uncategorized',
     'version': '0.2',
 
-    'auto_install': True,
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
