@@ -11,9 +11,9 @@ RUN chmod -R 775 /home/odoo
 RUN chown -R odoo:odoo /home/odoo
 RUN cd /home/odoo/custom-addons && curl -LOk  https://github.com/MatiasJAco/odoo-dockerfile-experiment/archive/master.zip
 RUN unzip /home/odoo/custom-addons/master.zip -d  /home/odoo/custom-addons
-RUN cp -r /home/odoo/custom-addons/odoo-dockerfile-experiment-master/myconferences  /home/odoo/custom-addons/myconferences
-RUN cp -r ls
-RUN cp -r /home/odoo/custom-addons/odoo-dockerfile-experiment-master/openeducat_core  /home/odoo/custom-addons/openeducat_core
+RUN cp -r /home/odoo/custom-addons/odoo-dockerfile-experiment-master/modulos/. /tmp/home/odoo/custom-addons
+#RUN cp -r /home/odoo/custom-addons/odoo-dockerfile-experiment-master/myconferences  /home/odoo/custom-addons/myconferences
+#RUN cp -r ls
 #COPY /home/odoo/custom-addons/odoo-dockerfile-experiment-master/entrypoint.sh /
 RUN rm /home/odoo/custom-addons/master.zip
 RUN rm -r /home/odoo/custom-addons/odoo-dockerfile-experiment-master
