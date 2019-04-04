@@ -19,5 +19,5 @@ RUN sed -i 's#/mnt/extra-addons#/mnt/extra-addons,/home/odoo/custom-addons#g' /e
 RUN echo "hola mundo" > /tmp/test/hola_mundo.txt
 RUN echo "hola mundo" > /mnt/extra-addons/hola_mundo_addons.txt
 RUN echo "hola mundo" > /var/lib/odoo/hola_mundo_addons.txt
-#ENTRYPOINT ["/entrypoint.sh"]
-#CMD ["odoo","-i myconference","-d test-install"]
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["odoo","-i myconference","-d test"]
